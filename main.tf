@@ -1,3 +1,8 @@
+provider "aws" {
+    region = "us-west-1"
+    
+}
+
 resource "postgresql_database" "my_db" {
   name              = "my_db"
   owner             = "my_role"
