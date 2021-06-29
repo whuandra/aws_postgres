@@ -133,70 +133,16 @@ variable "storage_encrypted" {
   description = "Flag to enable storage encryption"
 }
 
-variable "monitoring_interval" {
-  default     = 0
-  type        = number
-  description = "The interval, in seconds, between points when Enhanced Monitoring metrics are collected"
-}
-
 variable "deletion_protection" {
   default     = false
   type        = bool
   description = "Flag to protect the database instance from deletion"
 }
 
-variable "cloudwatch_logs_exports" {
-  default     = ["postgresql", "upgrade"]
-  type        = list
-  description = "List of logs to publish to CloudWatch Logs"
-}
-
-variable "subnet_group" {
-  type        = string
-  description = "Database subnet group"
-}
-
 variable "parameter_group" {
   default     = "default.postgres11"
   type        = string
   description = "Database engine parameter group"
-}
-
-variable "alarm_cpu_threshold" {
-  default     = 75
-  type        = number
-  description = "CPU alarm threshold as a percentage"
-}
-
-variable "alarm_disk_queue_threshold" {
-  default     = 10
-  type        = number
-  description = "Disk queue alarm threshold"
-}
-
-variable "alarm_free_disk_threshold" {
-  # 5GB
-  default     = 5000000000
-  type        = number
-  description = "Free disk alarm threshold in bytes"
-}
-
-variable "alarm_free_memory_threshold" {
-  # 128MB
-  default     = 128000000
-  type        = number
-  description = "Free memory alarm threshold in bytes"
-}
-
-variable "alarm_cpu_credit_balance_threshold" {
-  default     = 30
-  type        = number
-  description = "CPU credit balance threshold (only for db.t* instance types)"
-}
-
-variable "alarm_actions" {
-  type        = list
-  description = "List of ARNs to be notified via CloudWatch when alarm enters ALARM state"
 }
 
 variable "tags" {
