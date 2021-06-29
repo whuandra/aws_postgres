@@ -56,16 +56,6 @@ variable "database_name" {
   description = "Name of database inside storage engine"
 }
 
-variable "database_username" {
-  type        = string
-  description = "Name of user inside storage engine"
-}
-
-variable "database_password" {
-  type        = string
-  description = "Database password inside storage engine"
-}
-
 variable "database_port" {
   default     = 5432
   type        = number

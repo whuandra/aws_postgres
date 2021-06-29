@@ -13,9 +13,6 @@ resource "aws_db_instance" "postgresql" {
   storage_type                    = var.storage_type
   iops                            = var.iops
   name                            = var.database_name
-  password                        = var.database_password
-  username                        = var.database_username
-  copy_tags_to_snapshot           = var.copy_tags_to_snapshot
   port                            = var.database_port
   db_subnet_group_name            = var.subnet_group
   parameter_group_name            = var.parameter_group
