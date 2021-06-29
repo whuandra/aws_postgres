@@ -40,11 +40,6 @@ variable "iops" {
   description = "The amount of provisioned IOPS"
 }
 
-variable "vpc_id" {
-  type        = string
-  description = "ID of VPC meant to house database"
-}
-
 variable "database_identifier" {
   type        = string
   description = "Identifier for RDS instance"
