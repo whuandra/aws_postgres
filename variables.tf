@@ -40,11 +40,6 @@ variable "iops" {
   description = "The amount of provisioned IOPS"
 }
 
-variable "database_identifier" {
-  type        = string
-  description = "Identifier for RDS instance"
-}
-
 variable "database_name" {
   type        = string
   description = "Name of database inside storage engine"
