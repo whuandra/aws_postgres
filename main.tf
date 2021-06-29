@@ -12,7 +12,6 @@ resource "aws_db_instance" "postgresql" {
   iops                            = var.iops
   name                            = var.database_name
   port                            = var.database_port
-  db_subnet_group_name            = var.subnet_group
   parameter_group_name            = var.parameter_group
   storage_encrypted               = var.storage_encrypted
   deletion_protection             = var.deletion_protection
