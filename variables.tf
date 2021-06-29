@@ -45,12 +45,6 @@ variable "database_identifier" {
   description = "Identifier for RDS instance"
 }
 
-variable "snapshot_identifier" {
-  default     = ""
-  type        = string
-  description = "The name of the snapshot (if any) the database should be created from"
-}
-
 variable "database_name" {
   type        = string
   description = "Name of database inside storage engine"
