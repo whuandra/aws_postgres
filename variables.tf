@@ -199,16 +199,6 @@ variable "alarm_actions" {
   description = "List of ARNs to be notified via CloudWatch when alarm enters ALARM state"
 }
 
-variable "ok_actions" {
-  type        = list
-  description = "List of ARNs to be notified via CloudWatch when alarm enters OK state"
-}
-
-variable "insufficient_data_actions" {
-  type        = list
-  description = "List of ARNs to be notified via CloudWatch when alarm enters INSUFFICIENT_DATA state"
-}
-
 variable "tags" {
   default     = {}
   type        = map(string)
