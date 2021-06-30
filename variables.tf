@@ -16,6 +16,12 @@ variable "allocated_storage" {
   description = "Storage allocated to database instance"
 }
 
+variable "parameter_group" {
+  default     = "default.postgres11"
+  type        = string
+  description = "Database engine parameter group"
+}
+
 variable "engine_version" {
   default     = "11.5"
   type        = string
