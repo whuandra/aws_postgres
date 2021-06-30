@@ -129,12 +129,6 @@ variable "deletion_protection" {
   description = "Flag to protect the database instance from deletion"
 }
 
-variable "parameter_group" {
-  default     = "default.postgres11"
-  type        = string
-  description = "Database engine parameter group"
-}
-
 variable "tags" {
   default     = {}
   type        = map(string)
