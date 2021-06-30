@@ -10,6 +10,7 @@ resource "aws_db_instance" "postgresql" {
   instance_class                  = var.instance_type
   storage_type                    = var.storage_type
   iops                            = var.iops
+  password                        = var.database_password  
   name                            = var.database_name
   port                            = var.database_port
   parameter_group_name            = var.parameter_group
