@@ -13,6 +13,7 @@ resource "aws_db_instance" "postgresql" {
   password                        = var.database_password  
   name                            = var.database_name
   username                        = var.database_username
+  parameter_group_name            = var.parameter_group  
   port                            = var.database_port
   parameter_group_name            = var.parameter_group
   storage_encrypted               = var.storage_encrypted
