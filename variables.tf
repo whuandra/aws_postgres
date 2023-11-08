@@ -17,7 +17,7 @@ variable "allocated_storage" {
 }
 
 variable "engine_version" {
-  default     = "11.5"
+  default     = "11.16"
   type        = string
   description = "Database engine version"
 }
