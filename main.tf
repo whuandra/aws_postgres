@@ -11,7 +11,7 @@ resource "aws_db_instance" "postgresql" {
   storage_type                    = var.storage_type
   iops                            = var.iops
   password                        = var.database_password  
-  name                            = var.database_name
+  name                            = Win_postgres
   username                        = var.database_username
   port                            = var.database_port
   storage_encrypted               = var.storage_encrypted
