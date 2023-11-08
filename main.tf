@@ -4,7 +4,7 @@ provider "aws" {
 }
 
 resource "aws_db_instance" "postgresql" {
-  allocated_storage               = var.allocated_storage
+  allocated_storage               = 30
   engine                          = "postgres"
   engine_version                  = var.engine_version
   instance_class                  = var.instance_type
