@@ -17,11 +17,11 @@ resource "aws_db_instance" "postgresql" {
   storage_encrypted               = var.storage_encrypted
   deletion_protection             = var.deletion_protection
 
- // tags = merge(
- //   {
+  tags = merge(
+    {
  //     Project     = var.project,
- //     Environment = var.environment
- //   },
+      Environment = var.environment
+    },
  //   var.tags
- // )
+  )
 }
