@@ -19,7 +19,6 @@ resource "aws_db_instance" "postgresql" {
 
   tags = merge(
     {
-      Name        = "DatabaseServer",
       Project     = var.project,
       Environment = var.environment
     },
