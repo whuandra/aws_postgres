@@ -5,7 +5,7 @@ provider "aws" {
 
 resource "aws_db_instance" "postgresql" {
   allocated_storage               = 30
-  name                            = "Databaseterraform1"
+  // name                            = "Databaseterraform1"
   engine                          = "postgres"
   engine_version                  = "11.16"
   instance_class                  = "db.t3.micro"
